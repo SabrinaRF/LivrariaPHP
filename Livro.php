@@ -60,7 +60,9 @@ class Livro implements Publicacao{
     } 
     
     public function detalhes() {
-        
+        echo "Livro: ".$this->titulo. " escrito por ". $this->autor;
+        echo "<br> Total de páginas: ". $this->getTotalPag(). ", atual:" .$this->getPagAtual();
+        echo "<br> Sendo lido por ". $this->leitor->getNome();
     }
 
     public function abrir() {

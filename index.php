@@ -14,7 +14,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             require_once 'Pessoa.php';
             require_once 'Livro.php';
             
-            //$p= array();
             $p[0]= new Pessoa("Sabrina", 20, "F");
             $p[1]= new Pessoa("Antonio", 21, "M");
             
@@ -25,6 +24,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             print_r($l[0]);
             print_r($l[1]);
             print_r($l[2]);
+            $l[0]->folhear(20);
+            $l[0]->detalhes();
             
         ?>
         </pre>

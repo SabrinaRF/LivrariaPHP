@@ -34,7 +34,7 @@ class Pessoa {
         $this->sexo = $sexo;
     }
     public function fazerAniver() {
-        
+        $this->setIdade($this->getIdade()+1);
     }
 
 

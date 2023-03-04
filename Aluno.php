@@ -8,11 +8,7 @@ require_once 'Pessoa.php';
 class Aluno extends Pessoa {
     private $matricula;
     private $curso;
-    
-    public function __construct($matricula, $curso) {
-        $this->matricula = $matricula;
-        $this->curso = $curso;
-    }
+   
     public function getMatricula() {
         return $this->matricula;
     }
@@ -32,8 +28,8 @@ class Aluno extends Pessoa {
     public function cancelarMatricula() {
         $this->setMatricula(false);
     }
-    public function pagarMensalidade($dindin) {
-        
+    public function pagarMensalidade() {
+        echo"Pagando a mensalidade do aluno $this->nome";
     }
 
 }

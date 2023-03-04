@@ -5,15 +5,10 @@
  * @author sabri
  */
 abstract class Pessoa {
-    private $nome;
-    private $idade;
-    private $sexo;
+    protected $nome;
+    protected $idade;
+    protected $sexo;
     
-    public function __construct($nome, $idade, $sexo) {
-        $this->nome = $nome;
-        $this->idade = $idade;
-        $this->sexo = $sexo;
-    }
     
     public function getNome() {
         return $this->nome;

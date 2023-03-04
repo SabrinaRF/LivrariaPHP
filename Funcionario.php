@@ -5,7 +5,7 @@
  * @author sabri
  */
 require_once 'Pessoa.php';
-class Funcionario {
+class Funcionario extends Pessoa{
     private $setor;
     private $trabalhando;
     

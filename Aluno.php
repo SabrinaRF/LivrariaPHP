@@ -5,7 +5,7 @@
  * @author sabri
  */
 require_once 'Pessoa.php';
-class Aluno {
+class Aluno extends Pessoa {
     private $matricula;
     private $curso;
     
@@ -31,6 +31,9 @@ class Aluno {
 
     public function cancelarMatricula() {
         $this->setMatricula(false);
+    }
+    public function pagarMensalidade($dindin) {
+        
     }
 
 }
